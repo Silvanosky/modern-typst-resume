@@ -170,7 +170,7 @@
   task-description: "",
   date-from: "Present",
   date-to: "Present",
-  label: "Courses") = [
+  ) = [
   #text(size: text-size.large)[*#title*]\
   #subtitle\
   #text(style: "italic")[
@@ -186,12 +186,12 @@
 
 // experience-edu renders a content block for educational experience.
 #let experience-edu(..args) = {
-  experience(..args, label: "Courses")
+  experience(..args)
 }
 
 // experience-work renders a content block for work experience.
 #let experience-work(..args) = {
-  experience(..args, label: "Achievements/Tasks")
+  experience(..args)
 }
 
 // project renders a content block for a project.
